@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0d2a5c">
+<title>Ліцей «Інтелект» - концепт нового сайту</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2b4f;--ink2:#3f4a5a;--mut:#6f7785;--bg:#f6f5f0;--card:#fff;--soft:#eceee9;--line:#e1e0d8;--acc:#e9a23b;--acc2:#fbead0;--navy:#1d2b4f;--r:20px;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.65 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}.skip:focus{left:12px}
+.w{max-width:var(--max);margin:0 auto;padding:0 28px}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.disp{font-family:Oswald,"Inter Tight",sans-serif;text-transform:uppercase;letter-spacing:.01em}
+h1,h2,h3{margin:0;font-weight:500}
+h2.disp{font-size:clamp(34px,4.6vw,64px);line-height:1}
+h3{font:700 20px/1.3 Inter}
+.concept{position:fixed;left:16px;bottom:16px;z-index:60;background:rgba(11,22,38,.88);backdrop-filter:blur(8px);color:#cfd6e0;font-size:12.5px;line-height:1.4;padding:8px 14px;border-radius:12px;max-width:360px}.concept a{color:#fff;text-decoration:underline}.concept button{background:none;border:0;color:#fff;font-size:16px;cursor:pointer;margin-left:8px;padding:0 2px;vertical-align:middle}
+/* шапка */
+header.top{position:fixed;left:0;right:0;top:0;z-index:50;transition:background .3s,top .3s,box-shadow .3s;color:#fff}
+header.top.solid{top:0;background:rgba(255,255,255,.97);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.hd{display:flex;align-items:center;gap:20px;height:84px}
+.brand{display:flex;gap:12px;align-items:center;white-space:nowrap}.brand b{font:600 19px/1 Oswald;text-transform:uppercase;letter-spacing:.03em;display:block}.brand small{font-size:12px;opacity:.75;display:block;margin-top:4px}
+nav.mn{margin-left:auto;display:flex;gap:2px}nav.mn a{padding:9px 12px;font-weight:500;font-size:15px;border-radius:8px;white-space:nowrap;opacity:.92}nav.mn a:hover{opacity:1;background:rgba(255,255,255,.14)}header.solid nav.mn a:hover{background:var(--soft)}
+.cta{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:12px;background:var(--acc);color:var(--ink);font:700 15px Inter;white-space:nowrap;border:0;cursor:pointer}.cta:hover{filter:brightness(1.05)}
+.ghost{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:12px;border:1.5px solid rgba(255,255,255,.75);color:#fff;font:700 15px Inter;white-space:nowrap;background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}.ghost:hover{background:rgba(255,255,255,.16)}
+.burger{display:none;background:none;border:0;color:inherit;cursor:pointer}.ls{display:none}.hd>*{flex-shrink:0}.hcta{letter-spacing:0}
+@media(max-width:1380px){.hd .lf{display:none}.hd .ls{display:inline}nav.mn a{padding:9px 9px}}
+/* герой */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero picture,.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,38,.55) 0%,rgba(10,22,38,.05) 30%,rgba(10,22,38,.15) 55%,rgba(10,22,38,.82) 100%)}
+.hero .w{position:relative;z-index:2;width:100%;padding-bottom:64px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end}
+.lbl{font:600 14px Inter;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.hero h1{font:300 clamp(54px,9.5vw,148px)/1 Oswald;text-transform:uppercase;letter-spacing:-.005em;margin:14px 0 14px}
+.hero h1 b{font-weight:600;display:block;margin-top:.1em}
+.hero p.sub{font-size:20px;max-width:560px;margin:0 0 28px;opacity:.95}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap}
+.glass{justify-self:end;background:rgba(255,255,255,.12);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:18px 20px;max-width:380px;display:grid;gap:10px;font-size:15px}
+.glass .st{display:flex;gap:10px;align-items:center;font-weight:600}.dot{width:10px;height:10px;border-radius:50%;background:#7cf0b0;box-shadow:0 0 0 0 rgba(124,240,176,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(124,240,176,0)}100%{box-shadow:0 0 0 0 rgba(124,240,176,0)}}
+.glass button{justify-self:start;background:none;border:0;color:#fff;opacity:.8;font:600 13px Inter;cursor:pointer;padding:0;text-decoration:underline}
+.scroll{position:absolute;left:50%;bottom:18px;z-index:2;transform:translateX(-50%);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+/* цифри */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-1px;padding:64px 0 24px}
+.num{background:var(--card);border-radius:var(--r);padding:26px 26px 22px}.num small{display:block;color:var(--mut);font-size:14px;margin-bottom:6px}.num b{font:300 64px/1 Oswald;display:block;color:var(--ink)}.num b em{font-style:normal;font-size:26px;margin-left:6px}.num span{color:var(--ink2);font-size:15px}
+/* заява */
+.state{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;padding:72px 0;align-items:start}
+.state h2{font:500 clamp(30px,3.6vw,52px)/1.04 Oswald;text-transform:uppercase}
+.state p{color:var(--ink2);font-size:18px;max-width:560px;margin:22px 0 26px}
+.mos{display:grid;grid-template-columns:1.1fr 1fr;grid-auto-rows:230px;gap:12px}.mos button{border:0;padding:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--soft)}.mos img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.mos button:hover img{transform:scale(1.05)}.mos .t2{grid-row:span 2}
+.dark{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;background:var(--ink);color:#fff;font:700 15px Inter}.dark:hover{background:#1c3657}
+/* ступені */
+.sec{padding:80px 0}.sh{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.sh p{color:var(--mut);margin:12px 0 0;max-width:520px}
+.lv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.lvc{background:var(--card);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:14px;min-height:280px}.lvc .n{font:300 54px/1 Oswald;color:var(--acc)}.lvc h3{font:500 30px/1 Oswald;text-transform:uppercase}.lvc .g{font-weight:600;color:var(--mut);font-size:14px;letter-spacing:.08em;text-transform:uppercase}.lvc p{color:var(--ink2);margin:0}
+/* смуга */
+.band{background:var(--navy);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.band h2{font:500 clamp(30px,3.4vw,48px)/1.05 Oswald;text-transform:uppercase}.band p{color:#c7d2e0;font-size:17px}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:12px}.why div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px}.why b{display:block;font-size:17px;margin-bottom:4px}.why span{color:#c7d2e0;font-size:14.5px}
+/* новини */
+.ng{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px}
+.nc{background:var(--card);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s}.nc:hover{transform:translateY(-4px)}.nc:hover h3{text-decoration:underline;text-underline-offset:4px}
+.nc .im{height:230px;overflow:hidden;background:var(--soft)}.nc .im img{width:100%;height:100%;object-fit:cover}
+.nc .ph{height:230px;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:22px}.nc .ph b{font:300 84px/.9 Oswald;color:var(--acc)}.nc .ph span{font:500 18px Oswald;text-transform:uppercase;letter-spacing:.06em}
+.nc .bd{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px}.meta{display:flex;gap:10px;align-items:center;font-size:13.5px;color:var(--mut)}.tag{font-weight:700;font-size:12px;padding:3px 10px;border-radius:99px;background:var(--acc2);color:#7a5500}
+.nc p{margin:0;color:var(--ink2);font-size:15px}
+/* вступ */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{background:var(--card);border-radius:var(--r);padding:28px}.step .n{font:300 46px/1 Oswald;color:var(--acc)}.step h3{margin:10px 0 8px}.step p{color:var(--ink2);margin:0;font-size:15.5px}
+/* послуги для батьків */
+.qk{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.q{background:var(--card);border-radius:16px;padding:18px;display:flex;gap:12px;align-items:center;font-weight:600;font-size:15.5px;transition:background .2s}.q:hover{background:var(--acc2)}.q .ic{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;flex:none}
+/* документи */
+.docs{background:var(--card);border-radius:var(--r);overflow:hidden}.docs a{display:flex;gap:14px;align-items:center;padding:15px 22px;border-bottom:1px solid var(--line);font-weight:600}.docs a:last-child{border:0}.docs a:hover{background:var(--acc2)}.docs .ok{color:#2e7d5b}.docs .go{margin-left:auto;color:var(--mut)}
+.search{width:100%;max-width:560px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;font:500 16px Inter;background:#fff;margin-bottom:18px}
+/* внутрішні */
+.pg{padding-top:150px}.crumbs{font-size:14px;color:var(--mut)}.pg h1{font:500 clamp(44px,6vw,84px)/.95 Oswald;text-transform:uppercase;margin:14px 0 18px}.lead{font-size:19px;color:var(--ink2);max-width:760px;margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.tl{list-style:none;margin:0;padding:0}.tl li{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}.tl b{font:400 30px/1 Oswald;color:var(--ink)}
+.pp{display:flex;gap:16px;align-items:center;padding:18px;background:var(--card);border-radius:16px;margin-bottom:12px}.pp .av{width:54px;height:54px;border-radius:50%;background:var(--acc2);display:grid;place-items:center;font:600 18px Oswald;flex:none}.pp small{display:block;color:var(--mut);font-size:14px}
+.txt p{margin:0 0 14px;color:var(--ink2)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.gal button{border:0;padding:0;aspect-ratio:4/3;border-radius:14px;overflow:hidden;cursor:zoom-in}.gal img{width:100%;height:100%;object-fit:cover}
+.nl a{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}.nl a:hover h3{text-decoration:underline}.nl time{color:var(--mut)}.nl p{margin:6px 0 0;color:var(--ink2)}
+.article{max-width:780px}.article p{margin:0 0 16px;font-size:18px}.article .im{border-radius:18px;overflow:hidden;margin:24px 0;max-width:440px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:12px;border:1px solid var(--line);background:#fff;font:700 15px Inter}
+.ci{background:var(--card);border-radius:var(--r);overflow:hidden}.ci div{display:flex;gap:16px;padding:20px 22px;border-bottom:1px solid var(--line)}.ci div:last-child{border:0}.ci small{display:block;color:var(--mut);font-size:13.5px}.ci b{font-weight:700}
+.map{border-radius:var(--r);overflow:hidden;min-height:380px;background:var(--soft)}.map iframe{width:100%;height:100%;min-height:380px;border:0}
+/* футер */
+footer{background:#0b1626;color:#a9b4c3;margin-top:90px;font-size:14.5px}footer .big{font:300 clamp(40px,7vw,104px)/1.08 Oswald;text-transform:uppercase;color:#fff;padding:64px 0 34px;border-bottom:1px solid #1d2c42}footer .big b{font-weight:600;display:inline-block;margin-top:.08em}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:36px 0}footer h4{color:#fff;margin:0 0 10px;font:600 15px Inter}footer a{display:block;padding:3px 0}footer a:hover{color:#fff}
+.fb{border-top:1px solid #1d2c42;padding:16px 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.lb{position:fixed;inset:0;background:rgba(11,22,38,.94);display:none;place-items:center;z-index:90;cursor:zoom-out}.lb.on{display:grid}.lb img{max-width:92vw;max-height:88vh;border-radius:12px;min-width:min(90vw,640px)}
+.bnav{display:none}
+/* доступність */
+.a11y{position:fixed;left:0;right:0;top:0;z-index:80;background:#fff;color:#000;border-bottom:2px solid var(--ink);font-size:15px}.a11y .w{display:flex;flex-wrap:wrap;gap:12px 28px;padding-top:14px;padding-bottom:14px;align-items:center}
+.ag{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.ag span{font-weight:700;margin-right:4px}.ag button{min-width:42px;height:40px;padding:0 12px;border:1px solid #555;background:#fff;color:#000;border-radius:10px;font:700 15px Inter;cursor:pointer}.ag button[aria-pressed=true]{outline:3px solid #12263f;outline-offset:1px}
+.sw1{background:#fff!important;color:#000!important}.sw2{background:#000!important;color:#fff!important}.sw3{background:#9dd1ff!important;color:#063462!important}
+.a11y-open{display:inline-flex;gap:8px;align-items:center;background:none;border:1.5px solid currentColor;border-radius:10px;color:inherit;font:600 13.5px Inter;padding:8px 12px;cursor:pointer;opacity:.9;white-space:nowrap}
+html.fs2 body{font-size:20px}html.fs3 body{font-size:23px}
+html.cs1{--bg:#fff;--card:#fff;--ink:#000;--ink2:#000;--mut:#000;--line:#000;--soft:#fff;--acc:#000;--acc2:#eee;--navy:#000}
+html.cs2{--bg:#000;--card:#000;--ink:#fff;--ink2:#fff;--mut:#fff;--line:#fff;--soft:#000;--acc:#ff0;--acc2:#222;--navy:#000}html.cs2 .card,html.cs2 .num,html.cs2 .lvc,html.cs2 .nc,html.cs2 .step,html.cs2 .q,html.cs2 .docs,html.cs2 .ci,html.cs2 .pp{border:1px solid #fff}html.cs2 header.top.solid{background:#000;color:#fff}html.cs2 .cta{background:#ff0;color:#000}
+html.cs3{--bg:#9dd1ff;--card:#bfe2ff;--ink:#063462;--ink2:#063462;--mut:#063462;--line:#063462;--soft:#9dd1ff;--acc:#063462;--acc2:#9dd1ff;--navy:#063462}
+html.cs1 img,html.cs2 img,html.cs3 img{filter:grayscale(1)}
+html.ls1 body{letter-spacing:.08em;word-spacing:.16em;line-height:1.95}
+html.im1 main img,html.im1 .mos,html.im1 .gal,html.im1 .nc .im{display:none!important}html.im1 .hero{background:var(--navy)}
+html.ln1 main a{text-decoration:underline!important;text-underline-offset:3px}
+html.an1 *{animation:none!important;transition:none!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:1180px){.hd .a11y-open{margin-left:auto}nav.mn{display:none}.burger{display:inline-flex}nav.mn.open{display:flex;flex-direction:column;position:absolute;top:84px;left:0;right:0;background:#fff;color:var(--ink);padding:10px 20px 20px;box-shadow:0 10px 20px rgba(0,0,0,.1)}.hd .a11y-open span{display:none}}
+@media(max-width:980px){.hero .w,.state,.band,.two{grid-template-columns:1fr}.glass{justify-self:start}.nums{grid-template-columns:1fr 1fr}.lv,.steps{grid-template-columns:1fr}.ng{grid-template-columns:1fr 1fr}.qk{grid-template-columns:1fr 1fr}.gal{grid-template-columns:repeat(3,1fr)}footer .cols{grid-template-columns:1fr}.band{padding:34px}}
+@media(max-width:620px){body{font-size:16px;padding-bottom:68px}.w{padding:0 18px}.hd{height:70px}.brand small{display:none}.hd .cta{display:none}.hero .w{padding-bottom:40px}.hero p.sub{font-size:17px}.num b{font-size:48px}.ng,.qk{grid-template-columns:1fr}.why{grid-template-columns:1fr}.mos{grid-auto-rows:150px}.sec{padding:56px 0}.state{padding:48px 0}.nl a{grid-template-columns:1fr;gap:4px}.gal{grid-template-columns:repeat(2,1fr)}.pg{padding-top:120px}
+.concept{left:10px;right:10px;bottom:78px;max-width:none;font-size:11.5px}.hd{gap:10px}.bnav{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);z-index:45;padding:6px 0 max(6px,env(safe-area-inset-bottom))}.bnav a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11.5px;font-weight:600;color:var(--ink2)}}
+
+.kchips{display:flex;flex-wrap:wrap;gap:10px}.kchips span{background:var(--card);border-radius:99px;padding:10px 16px;font-weight:600;font-size:15px}
+.hero h1{font-size:clamp(54px,9.5vw,148px)}
+.brand img{width:44px;height:44px;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Перейти до змісту</a>
+<div class="concept">Концепт-макет для обговорення. Тексти й фото взято з нинішнього сайту ліцею, ілюстрація на першому екрані згенерована - усе буде оновлено. Не є офіційним сайтом закладу.<button aria-label="Сховати" onclick="this.parentNode.remove()">✕</button></div>
+<div class="a11y" id="a11y" role="region" aria-label="Налаштування доступності" hidden><div class="w">
+  <div class="ag"><span>Шрифт</span><button data-k="fs" data-v="1">A</button><button data-k="fs" data-v="2" style="font-size:19px">A</button><button data-k="fs" data-v="3" style="font-size:23px">A</button></div>
+  <div class="ag"><span>Кольори</span><button data-k="cs" data-v="0">Ц</button><button data-k="cs" data-v="1" class="sw1">Ц</button><button data-k="cs" data-v="2" class="sw2">Ц</button><button data-k="cs" data-v="3" class="sw3">Ц</button></div>
+  <div class="ag"><span>Інтервал</span><button data-k="ls" data-v="0">Звичайний</button><button data-k="ls" data-v="1">Широкий</button></div>
+  <div class="ag"><span>Зображення</span><button data-k="im" data-v="0">Показати</button><button data-k="im" data-v="1">Сховати</button></div>
+  <div class="ag"><button data-k="an" data-v="tog">Зупинити анімацію</button><button data-k="ln" data-v="tog">Підкреслити посилання</button><button id="a11yReset">Скинути</button><button id="a11yClose" aria-label="Закрити панель">✕</button></div>
+</div></div>
+<header class="top" id="hdr"><div class="w hd">
+  <a class="brand" href="#top"><span style="width:44px;height:44px;border-radius:12px;background:var(--acc);color:#1d2b4f;display:grid;place-items:center;font:600 20px Oswald">І</span><div><b>Інтелект</b><small>Приватний ліцей з 2003 року</small></div></a>
+  <nav class="mn" id="mn" aria-label="Головне меню"><a href="#school">Школа</a><a href="#kids">Дошкілля</a><a href="#life">Життя</a><a href="#join">Вступ</a><a href="#contacts">Контакти</a></nav>
+  <button class="a11y-open" id="a11yBtn" aria-expanded="false" aria-controls="a11y"><svg class="i"><use href="#i-eye"/></svg><span class="lf">Людям з порушенням зору</span><span class="ls">Доступність</span></button>
+  <a class="cta hcta" href="#join"><span class="lf">Записатися на співбесіду</span><span class="ls">Записатися</span></a>
+  <button class="burger" aria-label="Меню" onclick="mn.classList.toggle('open')"><svg class="i"><use href="#i-menu"/></svg></button>
+</div></header>
+<main id="top">
+<section class="hero"><picture><source media="(max-width:699px)" srcset="img/web/hero-m.jpg"><img class="bg" src="img/web/hero.jpg" alt="Ілюстрація: шкільна бібліотека в осінньому світлі"></picture>
+ <div class="w"><div><div class="lbl">З 2003 року · Холодна Гора · Харків</div><h1>Ліцей<b>«Інтелект»</b></h1><p class="sub">Приватний ліцей з поглибленим вивченням іноземних мов і дошкільними групами. Навчання українською за програмами МОН і перемоги учнів у міжнародних конкурсах.</p>
+ <div class="hbtns"><a class="cta" href="#join">Записатися на співбесіду <svg class="i" aria-hidden="true"><use href="#i-arr"/></svg></a><a class="ghost" href="#kids">Дошкілля</a><a class="ghost" href="tel:+380984094501"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>098 409 45 01</a></div></div>
+ <div class="glass"><div class="st"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><b>Пн-пт, зручний для батьків графік</b></div><div style="opacity:.9"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg> м. Харків, вул. Терихівська, 8 (колишня Скорохода), Холодна Гора</div><div style="opacity:.9"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> <a href="tel:+380984094501">098 409 45 01</a></div></div></div></section>
+<div class="w"><div class="nums"><div class="num"><small>З</small><b>2003<em>року</em></b><span>досвід понад 20 років</span></div><div class="num"><small>Учні</small><b>102</b><span>школа і дошкілля</span></div><div class="num"><small>Конкурси</small><b>4</b><span>міжнародні й всеукраїнські</span></div><div class="num"><small>Дошкілля</small><b>з 3<em>років</em></b><span>підготовка до школи</span></div></div>
+<section class="state" id="school"><div><h2>«Інтелект» - знання, мови й упевненість у собі</h2><p>Ліцей працює з 2003 року. Учні початкової школи перемагають у Міжнародних і Всеукраїнських конкурсах «Кенгуру», «Колосок», «Бобер», «Гринвич», а випускники початкової школи - на міській олімпіаді «Путівка в науку». Навчання - українською мовою за програмами МОН України.</p><a class="dark" href="#join">Записатися на співбесіду <svg class="i" aria-hidden="true"><use href="#i-arr"/></svg></a></div>
+<div class="mos"><button class="t2" data-src="img/web/37.jpg" aria-label="Відкрити фото"><img src="img/web/37.jpg" alt="Фото з життя ліцею"></button><button class="" data-src="img/web/16.jpg" aria-label="Відкрити фото"><img src="img/web/16.jpg" alt="Фото з життя ліцею"></button><button class="" data-src="img/web/12.jpg" aria-label="Відкрити фото"><img src="img/web/12.jpg" alt="Фото з життя ліцею"></button></div></section></div>
+<div class="w"><div class="band"><div><h2>Чому родини обирають «Інтелект»</h2><p style="margin:18px 0 26px">Невеликий приватний ліцей, де вчителі знають кожну дитину, а батьки - кожного вчителя.</p><a class="cta" href="#join"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Записатися на співбесіду</a></div><div class="why"><div><b>Поглиблені іноземні мови</b><span>з початкової школи</span></div><div><b>Школа й дошкілля</b><span>від 3 років до випуску</span></div><div><b>Переможці конкурсів</b><span>«Кенгуру», «Колосок», «Бобер», «Гринвич»</span></div><div><b>Досвід з 2003 року</b><span>понад 20 років приватної освіти</span></div><div><b>Дошкілля з 3 років</b><span>заняття в ігровій формі в зручний час</span></div><div><b>Досвідчена команда</b><span>директор - вчитель вищої категорії, методист</span></div></div></div></div>
+<div class="w"><section class="sec"><div class="sh"><div><h2 class="disp">Як ми навчаємо</h2><p>Програми МОН України, поглиблені мови, олімпіади й екскурсії.</p></div></div><div class="kchips"><span>Програми МОН України</span><span>Поглиблене вивчення іноземних мов</span><span>Олімпіади й міжнародні конкурси</span><span>«Путівка в науку»</span><span>Екскурсії: Ботанічний сад, екопарк, театр</span><span>Шевченківські читання</span></div></section></div>
+<div class="w"><section class="sec" id="kids" style="padding-top:0"><div class="state" style="padding:0"><div class="mos"><button class="t2" data-src="img/web/18.jpg" aria-label="Відкрити фото"><img src="img/web/18.jpg" alt="Фото з садочка"></button><button class="" data-src="img/web/19.jpg" aria-label="Відкрити фото"><img src="img/web/19.jpg" alt="Фото з садочка"></button><button class="" data-src="img/web/33.jpg" aria-label="Відкрити фото"><img src="img/web/33.jpg" alt="Фото з садочка"></button></div><div><h2>Дошкільні групи з трьох років</h2><p>Заняття в ігровій формі у зручний для батьків час. Педагоги-професіонали готують дітей до школи за сучасними методиками.</p><div class="kchips"><span>Заняття в ігровій формі</span><span>Підготовка до школи</span><span>Програми «Я у Світі» та «Росток»</span><span>Естетичне виховання</span><span>Зручний для батьків час</span><span>Діти від 3 років</span></div></div></div></section></div>
+<div class="w"><section class="sec" id="life" style="padding-top:0"><div class="sh"><div><h2 class="disp">Життя «Інтелекту»</h2><p>Перше вересня, випускні, свята, екскурсії й вільний час.</p></div></div><div class="gal"><button data-src="img/web/07.jpg" aria-label="Відкрити фото"><img src="img/web/07.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/09.jpg" aria-label="Відкрити фото"><img src="img/web/09.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/10.jpg" aria-label="Відкрити фото"><img src="img/web/10.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/11.jpg" aria-label="Відкрити фото"><img src="img/web/11.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/12.jpg" aria-label="Відкрити фото"><img src="img/web/12.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/13.jpg" aria-label="Відкрити фото"><img src="img/web/13.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/16.jpg" aria-label="Відкрити фото"><img src="img/web/16.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/17.jpg" aria-label="Відкрити фото"><img src="img/web/17.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/18.jpg" aria-label="Відкрити фото"><img src="img/web/18.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/19.jpg" aria-label="Відкрити фото"><img src="img/web/19.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/33.jpg" aria-label="Відкрити фото"><img src="img/web/33.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/35.jpg" aria-label="Відкрити фото"><img src="img/web/35.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/37.jpg" aria-label="Відкрити фото"><img src="img/web/37.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/38.jpg" aria-label="Відкрити фото"><img src="img/web/38.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button data-src="img/web/40.jpg" aria-label="Відкрити фото"><img src="img/web/40.jpg" alt="Фото з життя ліцею" loading="lazy"></button></div></section></div>
+<div class="w"><section class="sec" id="join" style="padding-top:0"><div class="sh"><div><h2 class="disp">Як вступити</h2><p>Три кроки до навчання в ліцеї.</p></div></div><div class="steps"><div class="step"><div class="n">01</div><h3>Запишіться на співбесіду</h3><p>Зателефонуйте 098 409 45 01 або 067 579 43 85 чи напишіть на intelekt@osvita.kh.ua.</p></div><div class="step"><div class="n">02</div><h3>Познайомтеся з ліцеєм</h3><p>Покажемо класи, познайомимо з учителями, відповімо на питання.</p></div><div class="step"><div class="n">03</div><h3>Подайте документи</h3><p>Копія свідоцтва про народження, медичні довідки - перелік уточнимо під час знайомства.</p></div></div></section></div>
+<div class="w"><section class="sec" id="contacts" style="padding-top:0"><div class="sh"><div><h2 class="disp">Контакти</h2></div></div><div class="two"><div class="ci"><div><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span><small>Адреса</small><b>м. Харків, вул. Терихівська, 8 (колишня Скорохода), Холодна Гора</b></span></div><div><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span><small>Телефони</small><b><a href="tel:+380984094501">098 409 45 01</a> · <a href="tel:+380675794385">067 579 43 85</a></b></span></div><div><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><span><small>Електронна пошта</small><b><a href="mailto:intelekt@osvita.kh.ua">intelekt@osvita.kh.ua</a></b></span></div><div><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><span><small>Графік</small><b>Пн-пт, зручний для батьків графік</b></span></div><div><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span><small>Директор</small><b>Фельдман Світлана Володимирівна</b></span></div></div><div class="map"><iframe title="Карта" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=36.177,49.981,36.204,49.994&layer=mapnik&marker=49.98738,36.19046"></iframe></div></div></section></div>
+</main>
+<footer><div class="w"><div class="big">Ліцей<br><b>«Інтелект»</b></div><div class="cols"><div><h4>Приватний заклад «Харківський ліцей "Інтелект"» Харківської області</h4>м. Харків, вул. Терихівська, 8 (колишня Скорохода), Холодна Гора<br><a href="tel:+380984094501">098 409 45 01</a><a href="mailto:intelekt@osvita.kh.ua">intelekt@osvita.kh.ua</a></div><div><h4>Розділи</h4><a href="#school">Школа</a><a href="#kids">Дошкілля</a><a href="#life">Життя</a><a href="#join">Вступ</a><a href="#contacts">Контакти</a></div><div><h4>Корисне</h4><a href="https://mon.gov.ua" target="_blank" rel="noopener">МОН України</a><a href="https://testportal.gov.ua" target="_blank" rel="noopener">УЦОЯО - НМТ</a></div></div><div class="fb"><span>Концепт-макет · не є офіційним сайтом закладу</span><span>Розробка: Микола Несвітій</span></div></div></footer>
+<nav class="bnav" aria-label="Швидке меню"><a href="#top"><svg class="i"><use href="#i-home"/></svg>Головна</a><a href="#kids"><svg class="i"><use href="#i-heart"/></svg>Дошкілля</a><a href="#join"><svg class="i"><use href="#i-bag"/></svg>Вступ</a><a href="#contacts"><svg class="i"><use href="#i-phone"/></svg>Контакти</a></nav>
+<div class="lb" id="lb" onclick="this.classList.remove('on')"><img id="lbi" alt=""></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2Z"/><path d="M4 19V5"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-food" viewBox="0 0 24 24"><path d="M4 11h16a8 8 0 0 1-16 0Z"/><path d="M8 7c0-2 2-2 2-4M13 7c0-2 2-2 2-4"/></symbol><symbol id="i-bag" viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="14" rx="3"/><path d="M9 7a3 3 0 0 1 6 0"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6.5-8 11-8 11Z"/></symbol><symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></symbol><symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/></symbol><symbol id="i-bunker" viewBox="0 0 24 24"><path d="M3 20h18M5 20V10l7-5 7 5v10"/><path d="M9 20v-5h6v5"/></symbol><symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1Z"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></symbol></defs></svg>
+<script>
+document.querySelectorAll('.gal button,.mos button').forEach(b=>b.onclick=()=>{lbi.src=b.dataset.src;lb.classList.add('on')});
+document.querySelectorAll('nav.mn a').forEach(a=>a.onclick=()=>mn.classList.remove('open'));
+function onScroll(){hdr.classList.toggle('solid',window.scrollY>60)}window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+const A={fs:'1',cs:'0',ls:'0',im:'0',ln:'0',an:'0'};try{Object.assign(A,JSON.parse(localStorage.getItem('a11y')||'{}'))}catch(e){}
+function applyA(){document.documentElement.className=['fs'+A.fs,'cs'+A.cs,'ls'+A.ls,'im'+A.im,'ln'+A.ln,'an'+A.an].join(' ');document.querySelectorAll('.ag button[data-k]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v==='tog'?String(A[b.dataset.k]==='1'):String(A[b.dataset.k]===b.dataset.v)));try{localStorage.setItem('a11y',JSON.stringify(A))}catch(e){}}
+document.querySelectorAll('.ag button[data-k]').forEach(b=>b.onclick=()=>{const k=b.dataset.k;A[k]=b.dataset.v==='tog'?(A[k]==='1'?'0':'1'):b.dataset.v;applyA()});
+a11yReset.onclick=()=>{Object.assign(A,{fs:'1',cs:'0',ls:'0',im:'0',ln:'0',an:'0'});applyA()};
+const tg=o=>{a11y.hidden=!o;a11yBtn.setAttribute('aria-expanded',String(o))};a11yBtn.onclick=()=>tg(a11y.hidden);a11yClose.onclick=()=>tg(false);applyA();
+</script>
+</body></html>
